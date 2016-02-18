@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
   /* top row */
   .col .well{
@@ -12,7 +12,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .row.base{
       display:none;
   }
