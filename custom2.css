@@ -4,6 +4,7 @@
   .col .well{
       margin-bottom: -99999px;
       padding-bottom: 99999px;
+
   }
 
   /* bottom row */
@@ -22,3 +23,9 @@
 .col-wrap{
     overflow: hidden;
 }
+
+/*below: reset for "well" styling*/
+/*.well {
+  background-color: inherit;
+  border: none;
+}*/
