@@ -20,7 +20,7 @@ An example can be found in the folder "best-css-solution". This is a CSS fix tha
 
 ###the second-best solution###
 
-Find this solution in the "js-solution" directory of this project. This is a jQuery workaround that sets the height of the columns to be equal to the height of the containing row. This code is wrapped in a conditional in order to guarantee that the height adjustment only happens when necessay (without the conditional statement, the columns will remain equal-in-height even if the current viewport size causes the columns to stack).
+Find this solution in the "js-solution" directory of this project. This is a jQuery workaround that sets the height of the columns to be equal to the height of the containing row. This code is wrapped in a conditional in order to guarantee that the height adjustment only happens when necessary (without the conditional statement, the columns will remain equal-in-height even if the current viewport size causes the columns to stack).
 
 **one additional note:** this solution requires that the page be refreshed every time the browser window is resized. This is likely not an issue, because the typical user isn't constantly resizing.
 
