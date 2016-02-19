@@ -30,15 +30,23 @@
           <ul>
             <!-- <li>all columns are affected</li> -->
             <li>no need to tediously set media query breakpoints</li>
-            <li>grid functionality is retained</li>
-            <li>in smaller viewports, the equal height of the columns is NOT retained (this is likely desirable) but to see this, we must refresh the browser. This is likely not a problem for users.</li>
+            <li>in smaller viewports, the forced equal height of the columns is NOT retained (this is likely desirable) but to see this, we must refresh the browser. This is likely not a problem for users.</li>
             <li>must only add two classes to the markup (this is much easier than the CSS fix I've documented in this project)</li>
+          </ul>
+          <p><strong>Must add this markup:</strong> </p>
+          <ul>
+            <li>an extra class to all columns being affected</li>
+            <li>an extra class to the row containing the desired columns</li>
           </ul>
 
         </div>
       </div>
 
-
+      <div class="row">
+        <div class=col-lg-12>
+          <h4 class="text-center">default action:</h4>
+        </div>
+      </div>
 
       <div class="row">
         <div class="col-md-4 bg-info">little bit</div>
@@ -48,7 +56,7 @@
 
       <div class="row">
         <div class=col-lg-12>
-          <p class="text-center">--- --- --- --- --- --- ---</p>
+          <h4 class="text-center">with jQuery hack:</h4>
         </div>
       </div>
 

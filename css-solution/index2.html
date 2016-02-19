@@ -22,16 +22,38 @@
 
       <p><strong>This solution uses CSS.</strong> </p>
       <ul>
-        <li>can target a specific column group</li>
         <li>must set media queries depending on the use of CSS classes in markup</li>
-        <li>grid functionality is retained</li>
-        <li>in smaller viewports, the equal height of the columns IS retained</li>
+        <li>in smaller viewports, the equal height of the columns is not retained</li>
         <li>forced to use bootstrap "well" styling as it is currently built</li>
         <li>must add 5 css classes to markup! This is ridiculous.</li>
         <li>this is a very convoluted hack. a lot of unnecessary markup even beyond the css classes (see col-base divs)</li>
       </ul>
     </div>
   </div>
+
+
+      <div class="row">
+        <div class=col-lg-12>
+          <h4 class="text-center">default action:</h4>
+        </div>
+      </div>
+
+
+    <!-- non-equalized sections -->
+    <div class="row">
+      <div class="col-md-4 bg-primary"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, quos?</p></div>
+      <div class="col-md-4 bg-success"><p>Lorem ipsum dolor sit amet.</p></div>
+      <div class="col-md-4 bg-info"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod nulla dolorum inventore ipsum perferendis fuga ad explicabo repellat, pariatur molestias dignissimos, fugiat dolores doloribus, quo consequatur neque et nesciunt nihil. Voluptatem impedit odit, fugit quae.</p></div>
+    </div>
+
+
+      <div class="row">
+        <div class=col-lg-12>
+          <h4 class="text-center">with CSS hack:</h4>
+        </div>
+      </div>
+
+
 
     <div class="row col-wrap">
       <div class="col-md-4 col">
@@ -48,7 +70,7 @@
 
       <div class="col-md-4 col">
         <div class="well">
-          <p>A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONOF CONTENT A LOT OF CONTENT A LOT OF CONTENTT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT </p>
+          <p>A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONOF CONTENT A LOT OF CONTENT A LOT OF CONTENTT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT CONTENT A LOT OF CONTENT A LOT OFCONTENT A LOT OF CONTENT A LOT OF</p>
         </div>
       </div>
 
@@ -61,24 +83,6 @@
       <div class="col-md-4 col-base"><div class="well"></div></div>
       <div class="col-md-4 col-base"><div class="well"></div></div>
     </div> <!-- end extra row -->
-
-
-
-    <!-- full-width content -->
-    <div class="row">
-      <div class="col-lg-12">
-        <p class="text-center">-- -- -- -- -- -- -- -- -- -- -- --</p>
-      </div>
-    </div>
-
-    <!-- non-equalized sections -->
-    <div class="row">
-      <div class="col-md-4 bg-primary"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, quos?</p></div>
-      <div class="col-md-4 bg-success"><p>Lorem ipsum dolor sit amet.</p></div>
-      <div class="col-md-4 bg-info"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod nulla dolorum inventore ipsum perferendis fuga ad explicabo repellat, pariatur molestias dignissimos, fugiat dolores doloribus, quo consequatur neque et nesciunt nihil. Voluptatem impedit odit, fugit quae.</p></div>
-    </div>
-
-
   </div>
 
 

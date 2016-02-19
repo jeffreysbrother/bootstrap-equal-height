@@ -10,11 +10,12 @@
   /* bottom row */
   .col-base{
       margin-top: -15px; /* cut off top portion of bottom wells */
+
   }
 }
 
 @media (max-width: 991px) {
-  .row.base{
+  .row.base {
       display:none;
   }
 }
@@ -28,4 +29,5 @@
 /*.well {
   background-color: inherit;
   border: none;
+  padding: 0;
 }*/
