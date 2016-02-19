@@ -17,13 +17,11 @@
 
 
   // //SOLUTION #2
-  if (screen.width > 992) {
     $('.row-eq-height').each(function() {
       var eHeight = $(this).innerHeight();
 
       $(this).find('.col-eq-height').outerHeight(eHeight);
     });
-  }
 
 }
 });
