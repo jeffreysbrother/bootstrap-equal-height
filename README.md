@@ -2,7 +2,7 @@
 
 A number of different solutions exist for forcing adjacent columns to have equal height. This is a summary of a few such solutions.
 
-##BOOTSTRAP##
+##1. BOOTSTRAP##
 ###the best solution###
 
 An example can be found in the folder "best-css-solution". This is a CSS fix that requires the addition of only two classes to the markup (one for the containing row, and one for each of the columns within) and only a few lines of CSS. The fix functions by modifying the padding and margin of the columns drastically, and then hiding the overflow of the containing row.
@@ -39,5 +39,25 @@ $(document).ready(function() {
 
 You can find an example of this fix in the "css-solution" directory. This CSS hack is fairly ridiculous, so I don't want to spend any time explaining it. If you look at the HTML file, you'll see that a bunch of additional markup---even beyond the addition of classes---is necessary. It also relies on the use of Bootstrap's "well" class, and this styling is quite difficult to remove (although I'm sure it's possible). An additional headache is caused by the fact that we must also adjust two media queries according to whatever Bootstrap classes we use to specify column widths.
 
-##FOUNDATION##
-##another viable solution (if using foundation)##
+##2. FOUNDATION##
+###another viable solution (if using foundation)###
+
+The project directory for this solution is named "equalizer-solution". In my opinion, this is the most elegant solution; the only thing preventing me from considering it as 'the best' is the simple fact that the agency I work for appears to have a Bootstrap fetish.
+
+What I like about this workaround is that the developer isn't required to add *any* additional CSS or JavaScript. Only the markup needs slight tweaking:
+
+```HTML
+<div class="row" data-equalizer>
+  <div class="large-4 columns blue" data-equalizer-watch>
+    { content here }
+  </div>
+
+  <div class="large-4 columns green" data-equalizer-watch>
+    { content here }
+  </div>
+
+  <div class="large-4 columns otherblue" data-equalizer-watch>
+    { content here }
+  </div>
+</div>
+```
