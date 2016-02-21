@@ -1,8 +1,8 @@
-##Equal-height Columns in Bootstrap##
+#Equal-height Columns in Bootstrap and Foundation#
 
 A number of different solutions exist for forcing adjacent columns to have equal height. This is a summary of a few such solutions.
 
-
+##BOOTSTRAP##
 ###the best solution###
 
 An example can be found in the folder "best-css-solution". This is a CSS fix that requires the addition of only two classes to the markup (one for the containing row, and one for each of the columns within) and only a few lines of CSS. The fix functions by modifying the padding and margin of the columns drastically, and then hiding the overflow of the containing row.
@@ -39,6 +39,5 @@ $(document).ready(function() {
 
 You can find an example of this fix in the "css-solution" directory. This CSS hack is fairly ridiculous, so I don't want to spend any time explaining it. If you look at the HTML file, you'll see that a bunch of additional markup---even beyond the addition of classes---is necessary. It also relies on the use of Bootstrap's "well" class, and this styling is quite difficult to remove (although I'm sure it's possible). An additional headache is caused by the fact that we must also adjust two media queries according to whatever Bootstrap classes we use to specify column widths.
 
-```javascript
-how about this
-```
+##FOUNDATION##
+##another viable solution (if using foundation)##
