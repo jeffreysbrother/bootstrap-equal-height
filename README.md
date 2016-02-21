@@ -48,16 +48,16 @@ What I like about this workaround is that the developer isn't required to add *a
 
 ```HTML
 <div class="row" data-equalizer>
-  <div class="large-4 columns blue" data-equalizer-watch>
-    { content here }
+  <div class="large-4 columns" data-equalizer-watch>
+    /* content here */
   </div>
 
-  <div class="large-4 columns green" data-equalizer-watch>
-    { content here }
+  <div class="large-4 columns" data-equalizer-watch>
+    /* content here */
   </div>
 
-  <div class="large-4 columns otherblue" data-equalizer-watch>
-    { content here }
+  <div class="large-4 columns" data-equalizer-watch>
+    /* content here */
   </div>
 </div>
 ```
