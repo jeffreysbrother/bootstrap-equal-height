@@ -61,3 +61,5 @@ What I like about this workaround is that the developer isn't required to add *a
   </div>
 </div>
 ```
+
+In other words, everything is handled by Foundation "natively". An extra bonus is the built-in ability to specify the behavior of the columns when they stack in smaller viewports. By default, the columns remain equal-height when stacked. To avoid this, we can add the `data-equalize-on-stack="false"` attribute to the containing row.
