@@ -44,7 +44,7 @@ You can find an example of this fix in the "css-solution" directory. This CSS ha
 
 The project directory for this solution is named "equalizer-solution". In my opinion, this is the most elegant solution; the only thing preventing me from considering it as 'the best' is the simple fact that the agency I work for appears to have a Bootstrap fetish.
 
-What I like about this workaround is that the developer isn't required to add *any* additional CSS or JavaScript. Only the markup needs slight tweaking:
+What I like about this workaround is that the developer isn't required to add *any* additional CSS or JavaScript. The markup needs only two additional attributes:
 
 ```HTML
 <div class="row" data-equalizer>
