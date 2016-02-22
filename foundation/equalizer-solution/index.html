@@ -1,0 +1,87 @@
+<!doctype html>
+      <html class="no-js" lang="en">
+        <head>
+          <meta charset="utf-8" />
+          <meta http-equiv="x-ua-compatible" content="ie=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Foundation Starter Template</title>
+          <link rel="stylesheet" href="css/foundation.min.css" />
+          <link rel="stylesheet" href="css/foundation-flex.min.css" />
+          <link rel="stylesheet" href="style.css" />
+        </head>
+        <body>
+
+          <h2 class="text-center">Foundation</h2>
+
+          <div class="row">
+            <p><strong>A non-Bootstrap solution (using Foundation's Equalizer: CSS and JS)</strong> </p>
+            <ul>
+              <!-- <li>all columns are affected</li> -->
+              <li>no need to tediously set media query breakpoints</li>
+              <li>in smaller viewports, the forced equal height of the columns is retained by default, BUT we can easily counteract this action by specifying an additional attribute on the containing row (data-equalize-on-stack="false")</li>
+              <li>must only add two <strong>attributes</strong> to the markup</li>
+            </ul>
+            <p><strong>Must add this markup:</strong> </p>
+            <ul>
+              <li>the "data-equalizer" attribute to the containing row</li>
+              <li>the "data-equalizer-watch" attribute to the columns</li>
+            </ul>
+        </div>
+
+          <!-- WITHOUT Foundation's Equalizer -->
+          <h4 class="text-center">default action:</h4>
+
+          <div class="row" >
+            <div class="large-4 columns blue" >
+                <p>
+                  little bit
+                </p>
+            </div>
+
+            <div class="large-4 columns green">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum suscipit quasi culpa explicabo cupiditate ea placeat quam, asperiores praesentium pariatur odit iste minus, corporis dolore voluptatibus, aspernatur sunt. Voluptas vel a, quidem minima laboriosam.
+                </p>
+            </div>
+
+            <div class="large-4 columns otherblue">
+
+                <p>
+                  medium bit of content medium medium medium medium medium medium
+                </p>
+            </div>
+          </div>
+
+
+          <!-- WITH Foundation's Equalizer -->
+          <h4 class="text-center">using Foundation's Equalizer:</h4>
+          <div class="row" data-equalizer data-equalize-on-stack="false">
+            <div class="large-4 columns blue" data-equalizer-watch>
+                <p>
+                  little bit
+                </p>
+            </div>
+
+            <div class="large-4 columns green" data-equalizer-watch>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum suscipit quasi culpa explicabo cupiditate ea placeat quam, asperiores praesentium pariatur odit iste minus, corporis dolore voluptatibus, aspernatur sunt. Voluptas vel a, quidem minima laboriosam.
+                </p>
+            </div>
+
+            <div class="large-4 columns otherblue" data-equalizer-watch>
+
+                <p>
+                  medium bit of content medium medium medium medium medium medium
+                </p>
+            </div>
+          </div>
+
+          <script src="js/vendor/jquery.min.js"></script>
+          <script src="js/vendor/what-input.min.js"></script>
+          <script src="js/foundation.min.js"></script>
+          <script>
+            $(document).foundation();
+          </script>
+
+        </body>
+      </html>
