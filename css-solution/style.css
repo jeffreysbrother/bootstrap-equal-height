@@ -1,0 +1,33 @@
+@media (min-width: 992px) {
+
+  /* top row */
+  .col .well{
+      margin-bottom: -99999px;
+      padding-bottom: 99999px;
+
+  }
+
+  /* bottom row */
+  .col-base{
+      margin-top: -15px; /* cut off top portion of bottom wells */
+
+  }
+}
+
+@media (max-width: 991px) {
+  .row.base {
+      display:none;
+  }
+}
+
+
+.col-wrap{
+    overflow: hidden;
+}
+
+/*below: attempted reset for "well" styling*/
+/*.well {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+}*/
