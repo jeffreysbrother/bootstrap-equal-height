@@ -2,10 +2,12 @@
 
 A number of different solutions exist for forcing adjacent columns to have equal height. This is a summary of a few such solutions.
 
+To view these examples, simply navigate to the bootstrap or foundation directory and then select a folder with the "-solution" suffix. Open the ```index.html``` file in your browser.
+
 ##1. BOOTSTRAP##
 ###the best solution###
 
-Find an example in the "flex-solution" directory (within the bootstrap directory). This solution requires only ONE additional class on the containing row.
+Find an example in the "flex-solution" directory. This solution requires only ONE additional class on the containing row.
 
 ```css
 .row-xs-flex {
