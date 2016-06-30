@@ -1,8 +1,8 @@
 $(document).ready(function() {
   if ($(window).width() > 950) {
-    $('.row-eq-height').each(function() {
+    $('.row-eq-height-js').each(function() {
       var eHeight = $(this).innerHeight();
-      $(this).find('.col-eq-height').outerHeight(eHeight);
+      $(this).find('.col-eq-height-js').outerHeight(eHeight);
     });
   }
 });

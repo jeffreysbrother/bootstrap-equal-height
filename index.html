@@ -1,0 +1,320 @@
+<!doctype html>
+      <html class="no-js" lang="en">
+        <head>
+          <meta charset="utf-8" />
+          <meta http-equiv="x-ua-compatible" content="ie=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Foundation Starter Template</title>
+          <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+          <link rel="stylesheet" href="css/foundation.min.css" />
+          <link rel="stylesheet" href="css/foundation-flex.min.css" />
+          <link rel="stylesheet" href="style.css" />
+        </head>
+        <body>
+
+          <h2 class="text-center">Foundation</h2>
+
+          <div class="row">
+            <p><strong>A non-Bootstrap solution (using Foundation's Equalizer: CSS and JS)</strong> </p>
+            <ul>
+              <!-- <li>all columns are affected</li> -->
+              <li>no need to tediously set media query breakpoints</li>
+              <li>in smaller viewports, the forced equal height of the columns is retained by default, BUT we can easily counteract this action by specifying an additional attribute on the containing row (data-equalize-on-stack="false")</li>
+              <li>must only add two <strong>attributes</strong> to the markup</li>
+            </ul>
+            <p><strong>Must add this markup:</strong> </p>
+            <ul>
+              <li>the "data-equalizer" attribute to the containing row</li>
+              <li>the "data-equalizer-watch" attribute to the columns</li>
+            </ul>
+        </div>
+
+          <!-- WITHOUT Foundation's Equalizer -->
+          <h4 class="text-center">default action:</h4>
+
+          <div class="row" >
+            <div class="large-4 columns blue" >
+                <p>
+                  little bit
+                </p>
+            </div>
+
+            <div class="large-4 columns green">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum suscipit quasi culpa explicabo cupiditate ea placeat quam, asperiores praesentium pariatur odit iste minus, corporis dolore voluptatibus, aspernatur sunt. Voluptas vel a, quidem minima laboriosam.
+                </p>
+            </div>
+
+            <div class="large-4 columns otherblue">
+
+                <p>
+                  medium bit of content medium medium medium medium medium medium
+                </p>
+            </div>
+          </div>
+
+
+          <!-- WITH Foundation's Equalizer -->
+          <h4 class="text-center">using Foundation's Equalizer:</h4>
+          <div class="row" data-equalizer data-equalize-on-stack="false">
+            <div class="large-4 columns blue" data-equalizer-watch>
+                <p>
+                  little bit
+                </p>
+            </div>
+
+            <div class="large-4 columns green" data-equalizer-watch>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum suscipit quasi culpa explicabo cupiditate ea placeat quam, asperiores praesentium pariatur odit iste minus, corporis dolore voluptatibus, aspernatur sunt. Voluptas vel a, quidem minima laboriosam.
+                </p>
+            </div>
+
+            <div class="large-4 columns otherblue" data-equalizer-watch>
+
+                <p>
+                  medium bit of content medium medium medium medium medium medium
+                </p>
+            </div>
+          </div>
+
+
+
+          <!-- BOOTSTRAP SOLUTIONS START HERE -->
+          <div class="container">
+
+
+            <!-- BOOTSTRAP + jQuery solution-->
+            <h1 class="text-center">Bootstrap</h1>
+
+            <div class="row">
+              <div class=col-lg-12>
+
+                <p><strong>This solution uses jQuery.</strong> </p>
+                <ul>
+                  <!-- <li>all columns are affected</li> -->
+                  <li>must set breakpoint in jQuery conditional statement</li>
+                  <li>in smaller viewports, the forced equal height of the columns is NOT retained (this is likely desirable) but to see this, we must refresh the browser. This is likely not a problem for users.</li>
+                  <li>must only add two classes to the markup</li>
+                </ul>
+                <p><strong>Must add this markup:</strong> </p>
+                <ul>
+                  <li>an extra class to all columns being affected</li>
+                  <li>an extra class to the row containing the desired columns</li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class=col-lg-12>
+                <h4 class="text-center">default action:</h4>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 bg-info">little bit</div>
+              <div class="col-md-4 bg-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum suscipit quasi culpa explicabo cupiditate ea placeat quam, asperiores praesentium pariatur odit iste minus, corporis dolore voluptatibus, aspernatur sunt. Voluptas vel a, quidem minima laboriosam.</div>
+              <div class="col-md-4 bg-primary">medium bit of content medium medium medium medium medium medium</div>
+            </div>
+
+            <div class="row">
+              <div class=col-lg-12>
+                <h4 class="text-center">with jQuery hack:</h4>
+              </div>
+            </div>
+
+            <div class="row row-eq-height-js">
+              <div class="col-md-4 bg-info col-eq-height-js">little bit</div>
+              <div class="col-md-4 bg-success col-eq-height-js">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum suscipit quasi culpa explicabo cupiditate ea placeat quam, asperiores praesentium pariatur odit iste minus, corporis dolore voluptatibus, aspernatur sunt. Voluptas vel a, quidem minima laboriosam.</div>
+              <div class="col-md-4 bg-primary col-eq-height-js">medium bit of content medium medium medium medium medium medium</div>
+            </div>
+
+
+
+
+
+            <!-- BOOTSTRAP + FLEX SOLUTION -->
+
+            <div class="row">
+              <div class=col-lg-12>
+
+                <p><strong>Flex Solution (CSS)</strong> </p>
+                <ul>
+                  <!-- <li>all columns are affected</li> -->
+                  <li>no need to tediously set media query breakpoints</li>
+                  <li>in smaller viewports, the forced equal height of the columns is NOT retained (this is likely desirable).</li>
+                  <li>must only add ONE class to the markup</li>
+                </ul>
+                <p><strong>Must add this markup:</strong> </p>
+                <ul>
+                  <li>an extra class to the containing row</li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class=col-lg-12>
+                <h4 class="text-center">default action:</h4>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 bg-info">little bit</div>
+              <div class="col-md-4 bg-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum suscipit quasi culpa explicabo cupiditate ea placeat quam, asperiores praesentium pariatur odit iste minus, corporis dolore voluptatibus, aspernatur sunt. Voluptas vel a, quidem minima laboriosam.</div>
+              <div class="col-md-4 bg-primary">medium bit of content medium medium medium medium medium medium</div>
+            </div>
+
+            <div class="row">
+              <div class=col-lg-12>
+                <h4 class="text-center">with flex hack:</h4>
+              </div>
+            </div>
+
+            <div class="row row-md-flex">
+              <div class="col-md-4 bg-info">little bit</div>
+              <div class="col-md-4 bg-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum suscipit quasi culpa explicabo cupiditate ea placeat quam, asperiores praesentium pariatur odit iste minus, corporis dolore voluptatibus, aspernatur sunt. Voluptas vel a, quidem minima laboriosam.</div>
+              <div class="col-md-4 bg-primary">medium bit of content medium medium medium medium medium medium</div>
+            </div>
+
+
+
+            <!-- BOOTSTRAP + CSS SOLUTION -->
+
+          <!-- top row of wells or rounded corner divs -->
+
+          <div class="row">
+            <div class=col-lg-12>
+
+              <p><strong>This solution uses CSS.</strong> </p>
+              <ul>
+                <li>must set media queries depending on the use of CSS classes in markup</li>
+                <li>in smaller viewports, the equal height of the columns is not retained</li>
+                <li>forced to use bootstrap "well" styling as it is currently built</li>
+                <li>must add 5 css classes to markup! This is ridiculous.</li>
+                <li>this is a very convoluted hack. a lot of unnecessary markup even beyond the css classes (see col-base divs)</li>
+              </ul>
+            </div>
+          </div>
+
+              <div class="row">
+                <div class=col-lg-12>
+                  <h4 class="text-center">default action:</h4>
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="well">
+                  <p>a little bit of content</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="well">
+                  <p>a medium bit of content medium medium medium medium</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="well">
+                  <p>A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONOF CONTENT A LOT OF CONTENT A LOT OF CONTENTT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT CONTENT A LOT OF CONTENT A LOT OFCONTENT A LOT OF CONTENT A LOT OF</p>
+                </div>
+              </div>
+            </div>
+
+              <div class="row">
+                <div class=col-lg-12>
+                  <h4 class="text-center">with CSS hack:</h4>
+                </div>
+              </div>
+
+            <div class="row col-wrap">
+              <div class="col-md-4 col">
+                <div class="well">
+                  <p> a little bit of content </p>
+                </div>
+              </div>
+
+              <div class="col-md-4 col">
+                <div class="well">
+                  <p>a medium bit of content medium medium medium medium</p>
+                </div>
+              </div>
+
+              <div class="col-md-4 col">
+                <div class="well">
+                  <p>A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONOF CONTENT A LOT OF CONTENT A LOT OF CONTENTT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT A LOT OF CONTENT CONTENT A LOT OF CONTENT A LOT OFCONTENT A LOT OF CONTENT A LOT OF</p>
+                </div>
+              </div>
+
+            </div><!-- end row of affected columns-->
+
+            <div class="row base col-wrap">
+              <!-- add a second row of wells or rounded corner divs immeadiately underneath-->
+              <div class="col-md-4 col-base"><div class="well"></div></div>
+              <div class="col-md-4 col-base"><div class="well"></div></div>
+              <div class="col-md-4 col-base"><div class="well"></div></div>
+            </div> <!-- end extra row -->
+
+
+
+
+
+            <!-- BOOTSTRAP + BEST CSS SOLUTION -->
+            <div class="row">
+              <div class=col-lg-12>
+
+                <p><strong>The best solution (using CSS)</strong> </p>
+                <ul>
+                  <!-- <li>all columns are affected</li> -->
+                  <li>no need to tediously set media query breakpoints</li>
+                  <li>in smaller viewports, the forced equal height of the columns is NOT retained (this is likely desirable).</li>
+                  <li>must only add two classes to the markup</li>
+                </ul>
+                <p><strong>Must add this markup:</strong> </p>
+                <ul>
+                  <li>an extra class to all columns being affected</li>
+                  <li>an extra class to the row containing the desired columns</li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class=col-lg-12>
+                <h4 class="text-center">default action:</h4>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 bg-info">little bit</div>
+              <div class="col-md-4 bg-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum suscipit quasi culpa explicabo cupiditate ea placeat quam, asperiores praesentium pariatur odit iste minus, corporis dolore voluptatibus, aspernatur sunt. Voluptas vel a, quidem minima laboriosam.</div>
+              <div class="col-md-4 bg-primary">medium bit of content medium medium medium medium medium medium</div>
+            </div>
+
+            <div class="row">
+              <div class=col-lg-12>
+                <h4 class="text-center">with best CSS hack:</h4>
+              </div>
+            </div>
+
+            <div class="row row-eq-height">
+              <div class="col-md-4 bg-info col-eq-height">little bit</div>
+              <div class="col-md-4 bg-success col-eq-height">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum suscipit quasi culpa explicabo cupiditate ea placeat quam, asperiores praesentium pariatur odit iste minus, corporis dolore voluptatibus, aspernatur sunt. Voluptas vel a, quidem minima laboriosam.</div>
+              <div class="col-md-4 bg-primary col-eq-height">medium bit of content medium medium medium medium medium medium</div>
+            </div>
+
+          </div>
+
+
+
+          <script src="js/vendor/jquery.min.js"></script>
+          <script src="js/vendor/what-input.min.js"></script>
+          <script src="js/foundation.min.js"></script>
+          <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+          <script src="custom.js"></script>
+          <script>
+            $(document).foundation();
+          </script>
+
+        </body>
+      </html>
