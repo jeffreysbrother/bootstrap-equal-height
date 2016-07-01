@@ -1,16 +1,25 @@
-/*******FOUNDATION EQUALIZER*******/
+/*general styles*/
 .blue {
   background-color: lightblue;
+  padding: 15px;
 }
 
 .green {
   background-color: lightgreen;
+  padding: 15px;
 }
 
-.otherblue {
-  background-color: blue;
-  color: #fff;
+.pink {
+  background-color: pink;
+  padding: 15px;
 }
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+
 
 
 
