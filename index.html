@@ -23,14 +23,14 @@
           <div class="row">
             <div class=col-lg-12>
 
-              <h4><strong>The best solution (pure CSS)</strong></h4>
+              <h4><strong>the best solution (pure CSS)</strong></h4>
               <ul>
                 <!-- <li>all columns are affected</li> -->
                 <li>no need to tediously set media query breakpoints</li>
                 <li>in smaller viewports, the forced equal height of the columns is NOT retained (this is likely desirable).</li>
                 <li>must only add two classes to the markup</li>
               </ul>
-              <p><strong>Must add this markup:</strong> </p>
+              <h4><strong>must add this markup:</strong> </h4>
               <ul>
                 <li>an extra class to all columns being affected</li>
                 <li>an extra class to the row containing the desired columns</li>
@@ -71,14 +71,14 @@
             <div class="row">
               <div class=col-lg-12>
 
-                <h4><strong>This solution uses jQuery.</strong> </h4>
+                <h4><strong>the second-best solution (jQuery)</strong> </h4>
                 <ul>
                   <!-- <li>all columns are affected</li> -->
                   <li>must set breakpoint in jQuery conditional statement</li>
                   <li>in smaller viewports, the forced equal height of the columns is NOT retained (this is likely desirable) but to see this, we must refresh the browser. This is likely not a problem for users.</li>
                   <li>must only add two classes to the markup</li>
                 </ul>
-                <p><strong>Must add this markup:</strong> </p>
+                <h4><strong>must add this markup:</strong> </h4>
                 <ul>
                   <li>an extra class to all columns being affected</li>
                   <li>an extra class to the row containing the desired columns</li>
@@ -122,14 +122,14 @@
             <div class="row">
               <div class=col-lg-12>
 
-                <p><strong>Flex Solution (CSS)</strong> </p>
+                <h4><strong>the third-best solution (CSS)</strong> </h4>
                 <ul>
                   <!-- <li>all columns are affected</li> -->
                   <li>no need to tediously set media query breakpoints</li>
                   <li>in smaller viewports, the forced equal height of the columns is NOT retained (this is likely desirable).</li>
                   <li>must only add ONE class to the markup</li>
                 </ul>
-                <p><strong>Must add this markup:</strong> </p>
+                <h4><strong>must add this markup:</strong> </h4>
                 <ul>
                   <li>an extra class to the containing row</li>
                 </ul>
@@ -172,7 +172,7 @@
           <div class="row">
             <div class=col-lg-12>
 
-              <p><strong>This solution uses CSS.</strong> </p>
+              <h4><strong>the fourth-best solution (likely a shitty idea in most cases)</strong> </h4>
               <ul>
                 <li>must set media queries depending on the use of CSS classes in markup</li>
                 <li>in smaller viewports, the equal height of the columns is not retained</li>
@@ -255,14 +255,14 @@
 
             <div class="row">
               <div class=col-lg-12>
-              <p><strong>A non-Bootstrap solution (using Foundation's Equalizer: CSS and JS)</strong> </p>
+              <h4><strong>another viable solution</strong> </h4>
               <ul>
                 <!-- <li>all columns are affected</li> -->
                 <li>no need to tediously set media query breakpoints</li>
                 <li>in smaller viewports, the forced equal height of the columns is retained by default, BUT we can easily counteract this action by specifying an additional attribute on the containing row (data-equalize-on-stack="false")</li>
                 <li>must only add two <strong>attributes</strong> to the markup</li>
               </ul>
-              <p><strong>Must add this markup:</strong> </p>
+              <h4><strong>must add this markup:</strong> </h4>
               <ul>
                 <li>the "data-equalizer" attribute to the containing row</li>
                 <li>the "data-equalizer-watch" attribute to the columns</li>
