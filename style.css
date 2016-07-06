@@ -1,4 +1,7 @@
 /*general styles*/
+* {
+  color: #333;
+}
 .blue {
   background-color: lightblue;
   padding: 15px;
@@ -20,15 +23,12 @@ h1 {
 }
 
 h4 {
-  color: #555;
   margin-top: 22px;
 }
 p, li {
   font-size: 16px;
 }
-p strong {
-  color: #555;
-}
+
 ul {
   list-style-position: inside;
 }
