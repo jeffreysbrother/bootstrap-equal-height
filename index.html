@@ -29,6 +29,7 @@
                 <li>no need to tediously set media query breakpoints</li>
                 <li>in smaller viewports, the forced equal height of the columns is NOT retained (this is likely desirable).</li>
                 <li>must only add ONE class to the markup</li>
+                <li><span class="red">earlier versions of IE might not be supported</span></li>
               </ul>
               <h4><strong>must add this markup:</strong> </h4>
               <ul>
@@ -63,7 +64,7 @@
           </div>
 
 
-          <!-- BOOTSTRAP + BEST CSS SOLUTION -->
+          <!-- BOOTSTRAP + CSS SOLUTION -->
           <div class="row">
             <div class=col-lg-12>
 
@@ -72,6 +73,7 @@
                 <li>no need to tediously set media query breakpoints</li>
                 <li>in smaller viewports, the forced equal height of the columns is NOT retained (this is likely desirable).</li>
                 <li>must only add two classes to the markup</li>
+                <li><span class="red">The bottom-padding of the column containing the most content will possibly be reduced slightly</span></li>
               </ul>
               <h4><strong>must add this markup:</strong> </h4>
               <ul>
@@ -175,13 +177,12 @@
               <ul>
                 <li>must set media queries depending on the use of CSS classes in markup</li>
                 <li>in smaller viewports, the equal height of the columns is not retained</li>
-                <li class="red">forced to use bootstrap "well" styling as it is currently built</li>
-                <li>this is a very convoluted hack. a lot of unnecessary markup even beyond the css classes (see col-base divs)</li>
-                <li class="red">this will break if you've added margins to the .row class</li>
+                <li><span class="red">forced to use bootstrap "well" styling</span></li>
+                <li><span class="red">this will break if you've added margins to the .row class</span></li>
               </ul>
               <h4><strong>must add this markup:</strong> </h4>
               <ul>
-                <li class="red">5 css classes!</li>
+                <li><span class="red">5 css classes!</span></li>
               </ul>
             </div>
           </div>
